@@ -1,0 +1,10 @@
+T = int(input())
+
+for x in range(0, T):
+    a_b = input().split(' ')
+    try:
+        print(int(int(a_b[0])/int(a_b[1])))
+    except ZeroDivisionError:
+        print("Error Code: integer division or modulo by zero")
+    except ValueError as e:
+        print("Error Code:",e)
